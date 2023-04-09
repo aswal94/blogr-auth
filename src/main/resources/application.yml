@@ -1,0 +1,22 @@
+
+# TODO: Create variable for db host, username, and password
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create # // create, none, update
+  datasource:
+    url: jdbc:mysql://localhost:3306/blogr_auth
+    username: root
+    password:
+
+server:
+  port: 8083
+
+jwt:
+  secret: javainuse
+
+# App Properties
+jwtSecret: klsdjf2332lkdsjfk2323
+jwtExpirationMs: 86400000
+jwtRefreshExpirationMs: 86400000
